@@ -35,11 +35,11 @@ const FOOTER = `
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <p class="footer-blurb">iQhayiya Design Workshop (PTY) Ltd. is a professional architectural firm in Margate. The studio works across South Africa for municipalities, government, private developers and home owners. IQHAYIYA translates to pride in isiXhosa.</p>
+        <p class="footer-blurb">iQhayiya Design Workshop (PTY) Ltd. is a professional architectural firm in Manaba. The studio works across South Africa for municipalities, government, private developers and home owners. IQHAYIYA translates to pride in isiXhosa.</p>
       </div>
       <div>
         <p class="eyebrow">Studio</p>
-        <p>88 Marine Drive<br>Margate<br>KwaZulu-Natal</p>
+        <p>5 Darent Place<br>Manaba<br>KwaZulu-Natal</p>
       </div>
       <div>
         <p class="eyebrow">Practice</p>
@@ -59,7 +59,7 @@ const FOOTER = `
         </p>
       </div>
     </div>
-    <p class="footer-note">iQhayiya Design Workshop · 88 Marine Drive, Margate</p>
+    <p class="footer-note">iQhayiya Design Workshop · 5 Darent Place, Manaba</p>
   </footer>
 `;
 

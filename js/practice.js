@@ -1,4 +1,4 @@
-import { mountChrome } from "./nav.js?v=klg1";
+import { mountChrome } from "./nav.js?v=klg2";
 
 mountChrome("practice");
 

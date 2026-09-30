@@ -144,8 +144,25 @@ body:has(.home-stage) .site-footer { display: none; }
   align-items: center;
   justify-content: center;
   gap: 1.4rem;
-  min-height: calc(100vh - var(--header-h) - 2rem);
-  padding: 0.5rem 1.5rem 3rem;
+  min-height: calc(100vh - var(--header-h) - 9.5rem);
+  padding: 0.5rem 1.5rem 1.2rem;
+}
+.home-contact {
+  padding: 0.4rem 8vw 2.8rem;
+  color: #6a6a6a;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  max-width: 28rem;
+}
+.home-contact p { margin: 0; }
+.home-contact a { color: inherit; }
+.home-contact a:hover { color: var(--ink); }
+.home-contact-name {
+  margin: 0 0 0.65rem !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #4a4a4a;
 }
 .gallery-arrow {
   flex: 0 0 auto;

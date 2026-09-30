@@ -69,12 +69,12 @@ export const articles = [
     caption: "Original corporate profile sheet",
     pullQuote: "Form follows site orientation.",
     source:
-      "From the iQhayiya Design Workshop corporate profile. Telephone numbers and street addresses on the sheet are historic. The studio now works from 88 Marine Drive, Margate.",
+      "From the iQhayiya Design Workshop corporate profile. Telephone numbers and street addresses on the sheet are historic. The studio now works from 5 Darent Place, Manaba.",
     sourceHref: "",
     sourceLinkLabel: "",
     paragraphs: [
       "iQhayiya Design Workshop was established in 2006 to conceptualise a municipal development framework for a small town called Flagstaff in the Eastern Cape. From that first commission the practice grew into a fully fledged architectural firm, driven by two young architects, Kayalethu Qwalela and Mfundo Maphumulo, who remain passionate about the practice of architecture and its realisation.",
-      "The sheet coins a term the office still holds: form follows site orientation — a way of naming the zeitgeist they wanted to see through. Company registration CK 2006/219347/23 sits in the centre column, with the early Johannesburg, Randburg, Northriding and Kokstad addresses of a practice that had not yet settled in Margate.",
+      "The sheet coins a term the office still holds: form follows site orientation — a way of naming the zeitgeist they wanted to see through. Company registration CK 2006/219347/23 sits in the centre column, with the early Johannesburg, Randburg, Northriding and Kokstad addresses of a practice that had not yet settled in Manaba.",
       "Kayalethu Qwalela, PrArch, MIArch, is a registered architect with the SACAP and one of the managing members. He founded the Kokstad branch of the practice in 2006. The profile records experience across spheres of architecture, including work as a project architect for Plan Architects (Johannesburg), a division of Prop5 Corporation.",
       "Mfundo Maphumulo, architect, is a partner at iQhayiya Design Workshop, having joined the practice in 2007. The sheet gives him five years at design practices in Durban and commercial practices in Johannesburg, and notes that he then oversaw the running of the Johannesburg branch.",
       "Both, the profile says, are proud alumni of the Tshwane University of Technology. The portraits, site photographs and drawings around the text are the same argument in pictures: buildings that take their form from the ground they sit on.",
