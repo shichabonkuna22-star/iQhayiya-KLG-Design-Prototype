@@ -13,11 +13,19 @@ const HEADER = `
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
-        <a href="work.html" data-nav="work">Projects</a>
-        <a href="practice.html" data-nav="practice">Practice</a>
+        <a href="practice.html" data-nav="practice">Contact</a>
+        <a href="work.html?cat=Residential" data-nav="residential">Residential</a>
+        <a href="work.html?cat=Community%20Infrastructure" data-nav="community">Community</a>
         <a href="news.html" data-nav="news">News</a>
         <a href="join.html" data-nav="join">Join</a>
-        <a href="practice.html#contact" data-nav="contact">Contact</a>
+        <span class="nav-social">
+          <a href="https://www.instagram.com/iqhayiya_design_workshop_archi/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm0 2a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2H7zm11.2 1.3a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM12 8.2A3.8 3.8 0 1112 15.8 3.8 3.8 0 0112 8.2zm0 2a1.8 1.8 0 100 3.6 1.8 1.8 0 000-3.6z"/></svg>
+          </a>
+          <a href="mailto:adminkok@iqhayiyadw.co.za" aria-label="Email the studio">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A2.5 2.5 0 015.5 4h13A2.5 2.5 0 0121 6.5v11a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 17.5v-11zm2.2.6l6.5 4.4c.2.13.46.13.66 0l6.5-4.4H5.2zm13.3 1.5l-5.9 4a2.2 2.2 0 01-2.4 0l-5.9-4v8.4c0 .28.22.5.5.5h13.6c.28 0 .5-.22.5-.5V8.6z"/></svg>
+          </a>
+        </span>
       </nav>
     </div>
   </header>
@@ -43,11 +51,11 @@ const FOOTER = `
         <p class="eyebrow">Index</p>
         <p>
           <a href="index.html">Home</a><br>
-          <a href="work.html">Projects</a><br>
-          <a href="practice.html">Practice</a><br>
+          <a href="work.html?cat=Residential">Residential</a><br>
+          <a href="work.html?cat=Community%20Infrastructure">Community</a><br>
           <a href="news.html">News</a><br>
           <a href="join.html">Join</a><br>
-          <a href="practice.html#contact">Contact</a>
+          <a href="practice.html">Contact</a>
         </p>
       </div>
     </div>
@@ -94,13 +102,9 @@ export function cardMarkup(project) {
   const href = `project.html?id=${encodeURIComponent(project.id)}`;
   const photo = project.hero || project.gallery?.[0] || "";
   return `
-    <a class="card" href="${href}">
+    <a class="klg-tile" href="${href}">
+      <img src="${photo}" alt="${escapeHtml(project.title)}">
       <h3>${escapeHtml(project.title)}</h3>
-      <div class="card-media card-media-fill">
-        <img src="${photo}" alt="${escapeHtml(project.title)}">
-      </div>
-      <p class="card-meta">${escapeHtml(project.category || "")}</p>
-      <p class="card-loc">${escapeHtml(project.location || "")}</p>
     </a>
   `;
 }

@@ -1,31 +1,20 @@
-import { mountChrome, cardMarkup } from "./nav.js?v=meet60";
-import { projects } from "./projects.js?v=meet68";
+import { mountChrome, cardMarkup } from "./nav.js?v=klg1";
+import { projects } from "./projects.js?v=klg1";
 
-mountChrome("work");
+const params = new URLSearchParams(location.search);
+const cat = params.get("cat") || "All";
+mountChrome(
+  cat === "Residential" ? "residential" : cat === "Community Infrastructure" ? "community" : "work"
+);
 
 const grid = document.getElementById("archive-grid");
 const empty = document.getElementById("archive-empty");
-const buttons = document.querySelectorAll("[data-filter]");
+const title = document.getElementById("work-title");
+const kicker = document.getElementById("work-kicker");
 
-function render(filter = "All") {
-  const list =
-    filter === "All"
-      ? projects
-      : projects.filter((project) => project.category === filter);
+const list = cat === "All" ? projects : projects.filter((project) => project.category === cat);
+if (title) title.textContent = cat === "All" ? "Selected work" : cat;
+if (kicker) kicker.textContent = cat === "All" ? "Projects" : cat;
 
-  if (grid) {
-    grid.innerHTML = list.map((project) => cardMarkup(project)).join("");
-  }
-  if (empty) {
-    empty.hidden = list.length > 0;
-  }
-  buttons.forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.filter === filter));
-  });
-}
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => render(button.dataset.filter));
-});
-
-render("All");
+if (grid) grid.innerHTML = list.map((project) => cardMarkup(project)).join("");
+if (empty) empty.hidden = list.length > 0;

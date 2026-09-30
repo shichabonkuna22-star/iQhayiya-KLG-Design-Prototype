@@ -1,5 +1,5 @@
-import { mountChrome, escapeHtml } from "./nav.js?v=meet60";
-import { getProject } from "./projects.js?v=meet68";
+import { mountChrome, escapeHtml } from "./nav.js?v=klg1";
+import { getProject } from "./projects.js?v=klg1";
 
 mountChrome("work");
 
@@ -51,18 +51,14 @@ if (!project || !root) {
     : "";
 
   root.innerHTML = `
-    <section class="hero project-hero">
+    <section class="project-hero">
       <img src="${project.hero}" alt="${escapeHtml(project.title)}">
-      <div class="hero-scrim"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">${escapeHtml([project.category, project.location, project.year].filter(Boolean).join(" · "))}</p>
-        <h1>${escapeHtml(project.title)}</h1>
-        <p class="lede">${escapeHtml(project.excerpt)}</p>
-      </div>
     </section>
 
     <section class="project-intro">
+      <h1>${escapeHtml(project.title)}</h1>
       <p class="project-copy">${detailsHtml}</p>
+      <p class="lede">${escapeHtml(project.excerpt)}</p>
     </section>
 
     ${galleryHtml}
