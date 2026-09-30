@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice — iQhayiya Design Workshop</title>
+  <meta name="description" content="About iQhayiya Design Workshop, Margate.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=meet60">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Studio</p>
+      <h1>iQhayiya Design Workshop.</h1>
+    </section>
+
+    <section class="practice-about">
+      <div class="practice-about-head">
+        <p class="eyebrow">About</p>
+        <h2>Pride, in isiXhosa.</h2>
+      </div>
+      <div class="practice-copy">
+        <p>iQhayiya Design Workshop (PTY) Ltd. (iDW) is a Professional Architectural firm established and led by two HDI youths, Kayalethu Qwalela and Mfundo Maphumulo. Both of the directors are registered as Professional Architects with the SACAP. The name ‘IQHAYIYA’ translates to ‘pride’ in isiXhosa and it embodies our ethos to create built environment spaces and places that the end-users and the communities can find pride in and ownership thereby improving the image of our profession as a whole.</p>
+        <p>iQhayiya Design Workshop is a design orientated firm with ambitions to be widely acclaimed nationally and internationally through servicing the needs of South Africa and the continent. The studio works across South Africa for municipalities and government, private developers and home owners. The service includes precinct planning and urban design, and supervision of the building project.</p>
+        <p>IDW was registered by Kayalethu Qwalela in 2006 during post-graduate studies to service a need that he had identified in his rural home town Flagstaff. The town was bursting at the seams with overcrowding of vehicles on the sole street that defined the CBD and the municipality heeded a call for submissions from reputable companies and this sparked the creation of the business. Mfundo Maphumulo bought into the vision and joined the practice as both individuals shared a keen sense of entrepreneurialism and philanthropic ambitions. Kaya and Mfundo met at the Tshwane University of Technology where they became very close friends over the course of their post-graduate studies and well beyond. Official trading started in 2012 when all the statutory requirements boxes for a professional business were ticked.</p>
+      </div>
+    </section>
+
+    <section class="notes">
+      <article>
+        <p class="eyebrow">Directors</p>
+        <h3>Kayalethu Qwalela and Mfundo Maphumulo</h3>
+        <p>Both directors are registered as Professional Architects with the SACAP.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Focus</p>
+        <h3>Who we serve</h3>
+        <p>Municipalities and government, private developers and home owners, across South Africa.</p>
+      </article>
+      <article>
+        <p class="eyebrow">Join</p>
+        <h3>Portfolios and CVs</h3>
+        <p>See <a href="join.html">Join</a>. Send a digital portfolio and CV to <a href="mailto:adminkok@iqhayiyadw.co.za">adminkok@iqhayiyadw.co.za</a>.</p>
+      </article>
+    </section>
+
+    <section class="contact-panel" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Contact us.</h2>
+        <p>88 Marine Drive<br>Margate, KwaZulu-Natal</p>
+        <p><a href="tel:+27393120403">T +27 (0) 39 312 0403</a><br>
+        <a href="https://wa.me/27737257297">WhatsApp 073 725 7297</a></p>
+        <p><a href="https://www.instagram.com/iqhayiya_design_workshop_archi/" target="_blank" rel="noopener">Instagram</a><br>
+        <a href="https://www.facebook.com/iQhayiya-Design-Workshop-Architects-254652624596384/" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://www.linkedin.com/company/iqhayiya-design-workshop" target="_blank" rel="noopener">LinkedIn</a></p>
+        <div class="map-embed">
+          <iframe title="iQhayiya Design Workshop on Google Maps" src="https://maps.google.com/maps?q=88%20Marine%20Drive%20Margate&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <form id="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="given-name">
+          <span class="field-error" data-error-for="name"></span>
+        </label>
+        <label>
+          Surname
+          <input type="text" name="surname" autocomplete="family-name">
+          <span class="field-error" data-error-for="surname"></span>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email">
+          <span class="field-error" data-error-for="email"></span>
+        </label>
+        <label>
+          <span id="project-type-label">Subject</span>
+          <select name="type" id="project-type" class="sr-only" tabindex="-1" aria-hidden="true">
+            <option value="">Select</option>
+            <option>Urban design</option>
+            <option>Building supervision</option>
+            <option>Residential</option>
+            <option>Community Infrastructure</option>
+          </select>
+          <div class="custom-select" data-custom-select>
+            <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="project-type-label">
+              Select
+            </button>
+            <ul class="custom-select-menu" role="listbox" hidden>
+              <li role="option" data-value="Urban design">Urban design</li>
+              <li role="option" data-value="Building supervision">Building supervision</li>
+              <li role="option" data-value="Residential">Residential</li>
+              <li role="option" data-value="Community Infrastructure">Community Infrastructure</li>
+            </ul>
+          </div>
+          <span class="field-error" data-error-for="type"></span>
+        </label>
+        <label>
+          Message
+          <textarea name="note" rows="5"></textarea>
+          <span class="field-error" data-error-for="note"></span>
+        </label>
+        <button type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="js/practice.js?v=meet60"></script>
+</body>
+</html>

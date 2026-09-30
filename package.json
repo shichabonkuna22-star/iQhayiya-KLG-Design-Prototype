@@ -1,0 +1,11 @@
+{
+  "name": "iqhayiya-design-workshop",
+  "private": true,
+  "description": "Local preview of the GitHub Pages site. Source matches https://github.com/shichabonkuna22-star/iQhayiya-Design-Workshop",
+  "scripts": {
+    "dev": "node preview-server.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

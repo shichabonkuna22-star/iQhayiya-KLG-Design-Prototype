@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News — iQhayiya Design Workshop</title>
+  <meta name="description" content="Press, awards and studio records from iQhayiya Design Workshop.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=meet52">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero news-masthead">
+      <p class="eyebrow">Press · Awards · Studio</p>
+      <h1>News.</h1>
+      <p class="lede">Full stories from the press, the SAIA-KZN journal and the studio’s own profile. Open a card to read the article.</p>
+    </section>
+    <div class="filters" role="group" aria-label="Filter news">
+      <button type="button" data-filter="All" aria-pressed="true">All</button>
+      <button type="button" data-filter="Awards">Awards</button>
+      <button type="button" data-filter="Press">Press</button>
+      <button type="button" data-filter="Studio">Studio</button>
+    </div>
+    <div class="archive-grid" id="news-grid"></div>
+    <p class="empty" id="news-empty" hidden>No stories in this set.</p>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="js/news.js?v=meet60"></script>
+</body>
+</html>
