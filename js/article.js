@@ -53,13 +53,13 @@ if (!article || !root) {
       </header>
       <div class="article-spread">
         <div class="article-body">
+          <figure class="news-clip article-clip" data-lightbox>
+            <img src="${article.image}" alt="${escapeHtml(article.imageAlt || article.title)}">
+            <figcaption>${escapeHtml(article.caption || "Original page")} · Click to enlarge</figcaption>
+          </figure>
           ${bodyHtml}
           <p class="news-source">${escapeHtml(article.source || "")}${linkHtml}</p>
         </div>
-        <figure class="news-clip article-clip" data-lightbox>
-          <img src="${article.image}" alt="${escapeHtml(article.imageAlt || article.title)}">
-          <figcaption>${escapeHtml(article.caption || "Original page")} · Click to enlarge</figcaption>
-        </figure>
       </div>
     </article>
 
