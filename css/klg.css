@@ -311,9 +311,9 @@ h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
 #news-grid {
   grid-template-columns: 1fr 1fr;
   gap: 2rem 1.6rem;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 clamp(1.1rem, 3vw, 2.6rem) 4rem;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 2rem;
 }
 #news-grid .klg-tile-media { aspect-ratio: 4 / 3; }
 #news-grid .klg-tile h3 {
@@ -363,8 +363,7 @@ h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
   flex-wrap: wrap;
   gap: 0.45rem;
   margin: 0 0 1.6rem;
-  padding-left: clamp(1.1rem, 3vw, 2.6rem);
-  padding-right: clamp(1.1rem, 3vw, 2.6rem);
+  padding: 0;
 }
 .filters button {
   border: 1px solid transparent;
@@ -394,7 +393,7 @@ h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
 .about-block,
 .awards-block {
   padding: 1.6rem 0 0.6rem;
-  max-width: 46rem;
+  max-width: none;
 }
 .about-block h2,
 .awards-block h2 {
@@ -505,13 +504,17 @@ h3 { font-size: 1.02rem; margin: 0 0 0.4rem; }
 .article-page,
 .join-masthead,
 .join-openings,
-.page-hero,
-.news-masthead {
+.page-hero {
   max-width: 1180px;
   margin: 0 auto;
   padding: 1.8rem clamp(1.1rem, 3vw, 2.6rem);
 }
 .article-page { max-width: 1280px; }
+.news-masthead {
+  padding: 0 0 0.4rem;
+  max-width: none;
+  margin: 0;
+}
 .project-copy { text-align: center; color: #555; font-size: 0.9rem; }
 .meta-label { letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.68rem; color: var(--muted); }
 .meta-value { font-style: italic; }
