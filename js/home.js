@@ -1,4 +1,4 @@
-import { mountChrome } from "./nav.js?v=klg3";
+import { mountChrome } from "./nav.js?v=klg4";
 import { featuredProjects } from "./projects.js?v=klg3";
 
 mountChrome("home");

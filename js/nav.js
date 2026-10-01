@@ -13,6 +13,7 @@ const HEADER = `
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
         <a href="practice.html" data-nav="practice">Contact</a>
         <a href="work.html?cat=Residential" data-nav="residential">Residential</a>
         <a href="work.html?cat=Community%20Infrastructure" data-nav="community">Community</a>
@@ -51,6 +52,7 @@ const FOOTER = `
         <p class="eyebrow">Index</p>
         <p>
           <a href="index.html">Home</a><br>
+          <a href="about.html">About</a><br>
           <a href="work.html?cat=Residential">Residential</a><br>
           <a href="work.html?cat=Community%20Infrastructure">Community</a><br>
           <a href="news.html">News</a><br>
