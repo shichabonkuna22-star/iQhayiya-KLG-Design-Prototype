@@ -1,4 +1,4 @@
-import { mountChrome, cardMarkup } from "./nav.js?v=klg4";
+import { mountChrome, cardMarkup } from "./nav.js?v=klg5";
 import { projects } from "./projects.js?v=klg3";
 
 const params = new URLSearchParams(location.search);

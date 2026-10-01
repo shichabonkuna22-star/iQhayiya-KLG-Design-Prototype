@@ -14,11 +14,11 @@ const HEADER = `
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
         <a href="about.html" data-nav="about">About</a>
-        <a href="practice.html" data-nav="practice">Contact</a>
         <a href="work.html?cat=Residential" data-nav="residential">Residential</a>
         <a href="work.html?cat=Community%20Infrastructure" data-nav="community">Community</a>
         <a href="news.html" data-nav="news">News</a>
         <a href="join.html" data-nav="join">Join</a>
+        <a href="practice.html" data-nav="practice">Contact</a>
         <span class="nav-social">
           <a href="https://www.instagram.com/iqhayiya_design_workshop_archi/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm0 2a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2H7zm11.2 1.3a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM12 8.2A3.8 3.8 0 1112 15.8 3.8 3.8 0 0112 8.2zm0 2a1.8 1.8 0 100 3.6 1.8 1.8 0 000-3.6z"/></svg>

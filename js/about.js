@@ -1,3 +1,3 @@
-import { mountChrome } from "./nav.js?v=klg4";
+import { mountChrome } from "./nav.js?v=klg5";
 
 mountChrome("about");
