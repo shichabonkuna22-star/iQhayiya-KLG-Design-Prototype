@@ -1,5 +1,5 @@
-import { mountChrome, escapeHtml } from "./nav.js?v=klg2";
-import { getArticle } from "./articles.js?v=klg2";
+import { mountChrome, escapeHtml } from "./nav.js?v=klg3";
+import { getArticle } from "./articles.js?v=klg3";
 
 mountChrome("news");
 

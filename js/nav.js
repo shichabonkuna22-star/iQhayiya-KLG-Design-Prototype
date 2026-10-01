@@ -86,6 +86,14 @@ export function mountChrome(active = "") {
     }
   });
 
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.querySelector(".site-header")?.classList.toggle("is-scrolled", window.scrollY > 6);
+    },
+    { passive: true }
+  );
+
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.getElementById("site-nav");
   if (toggle && nav) {
@@ -103,8 +111,11 @@ export function cardMarkup(project) {
   const photo = project.hero || project.gallery?.[0] || "";
   return `
     <a class="klg-tile" href="${href}">
-      <img src="${photo}" alt="${escapeHtml(project.title)}">
+      <span class="klg-tile-media">
+        <img src="${photo}" alt="${escapeHtml(project.title)}" loading="lazy">
+      </span>
       <h3>${escapeHtml(project.title)}</h3>
+      <p>${escapeHtml(project.location || project.category || "")}</p>
     </a>
   `;
 }

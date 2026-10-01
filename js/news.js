@@ -1,5 +1,5 @@
-import { mountChrome, escapeHtml } from "./nav.js?v=klg2";
-import { articles } from "./articles.js?v=klg2";
+import { mountChrome, escapeHtml } from "./nav.js?v=klg3";
+import { articles } from "./articles.js?v=klg3";
 
 mountChrome("news");
 
@@ -12,8 +12,11 @@ function newsCardMarkup(article) {
   const href = `article.html?id=${encodeURIComponent(article.id)}`;
   return `
     <a class="klg-tile" href="${href}">
-      <img src="${article.image}" alt="${escapeHtml(article.title)}">
+      <span class="klg-tile-media">
+        <img src="${article.image}" alt="${escapeHtml(article.title)}" loading="lazy">
+      </span>
       <h3>${escapeHtml(article.title)}</h3>
+      <p>${escapeHtml([article.category, article.publication].filter(Boolean).join(" · "))}</p>
     </a>
   `;
 }
