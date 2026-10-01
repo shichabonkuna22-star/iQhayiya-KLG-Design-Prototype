@@ -12,11 +12,11 @@ function newsCardMarkup(article) {
   const href = `article.html?id=${encodeURIComponent(article.id)}`;
   return `
     <a class="klg-tile" href="${href}">
+      <h3>${escapeHtml(article.title)}</h3>
       <span class="klg-tile-media">
         <img src="${article.image}" alt="${escapeHtml(article.title)}" loading="lazy">
       </span>
-      <h3>${escapeHtml(article.title)}</h3>
-      <p>${escapeHtml([article.category, article.publication].filter(Boolean).join(" · "))}</p>
+      <p>${escapeHtml(article.category || "")}</p>
     </a>
   `;
 }

@@ -40,27 +40,24 @@ if (!article || !root) {
   root.innerHTML = `
     <article class="article-page">
       <header class="article-head">
-        <p class="news-kicker">${escapeHtml(article.category)}</p>
         <h1>${escapeHtml(article.title)}</h1>
-        <p class="article-standfirst">${escapeHtml(article.standfirst || "")}</p>
-        <p class="article-byline">
-          <span>${escapeHtml(article.byline || "")}</span>
-          <span class="meta-sep">|</span>
-          <span>${escapeHtml(article.publication || "")}</span>
-          <span class="meta-sep">|</span>
-          <span>${escapeHtml(article.dateline || "")}</span>
-        </p>
       </header>
-
-      <div class="article-spread">
-        <div class="article-body">
-          ${bodyHtml}
-          <p class="news-source">${escapeHtml(article.source || "")}${linkHtml}</p>
-        </div>
-        <figure class="news-clip article-clip" data-lightbox>
-          <img src="${article.image}" alt="${escapeHtml(article.imageAlt || article.title)}">
-          <figcaption>${escapeHtml(article.caption || "Original page")} · Click to enlarge</figcaption>
-        </figure>
+      <figure class="news-clip article-clip article-hero-clip" data-lightbox>
+        <img src="${article.image}" alt="${escapeHtml(article.imageAlt || article.title)}">
+        <figcaption>${escapeHtml(article.caption || "Original page")} · Click to enlarge</figcaption>
+      </figure>
+      <p class="news-kicker">${escapeHtml(article.category)}</p>
+      <p class="article-standfirst">${escapeHtml(article.standfirst || "")}</p>
+      <p class="article-byline">
+        <span>${escapeHtml(article.byline || "")}</span>
+        <span class="meta-sep">|</span>
+        <span>${escapeHtml(article.publication || "")}</span>
+        <span class="meta-sep">|</span>
+        <span>${escapeHtml(article.dateline || "")}</span>
+      </p>
+      <div class="article-body">
+        ${bodyHtml}
+        <p class="news-source">${escapeHtml(article.source || "")}${linkHtml}</p>
       </div>
     </article>
 
